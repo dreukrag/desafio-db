@@ -89,6 +89,10 @@ const headerStyles = makeStyles(() => ({
       fontWeight: "bold",
     },
   },
+  logobox: {
+    display: "flex",
+    alignItems: "center",
+  },
 }));
 const Header = (props) => {
   const styles = headerStyles();
@@ -139,7 +143,7 @@ const Header = (props) => {
   );
   return (
     <header className={styles.main}>
-      <div>
+      <div className={styles.logobox}>
         <img src={headerIcon} alt="logo" />
         <span className={styles.title}>Products</span>
       </div>
