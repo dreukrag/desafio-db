@@ -10,7 +10,7 @@ import Cart from "./Cart";
 const productsStyles = makeStyles(() => ({
   main: {
     backgroundColor: "#fafafa",
-    height: "100vh",
+    minHeight: "100vh",
     padding: "64px",
   },
   title: {
