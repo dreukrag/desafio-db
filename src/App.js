@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/Header";
+import Banner from "./components/Banner";
+// import { makeStyles } from "@material-ui/core/styles";
+import Products from "./components/Products";
+import Footer from "./components/Footer";
 
+// const mainStyles = makeStyles({
+//   content: {
+//     paddingTop: "120px",
+//   },
+// });
 function App() {
+  // const styles = mainStyles();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Banner />
+      <Products />
+      <Footer />
     </div>
   );
 }
